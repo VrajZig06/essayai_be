@@ -31,7 +31,7 @@ class EmailService:
                             Please click the button below to verify your email address and activate your account.
                         </p>
                         <div style="text-align: center; margin: 30px 0;">
-                            <a href="https://id-preview--37502fe7-2c54-4d35-a59d-6d3f457a38c4.lovable.app/verify-email?token={verification_token}" 
+                            <a href="https://essay-ai-vraj-dev.netlify.app/verify-email?token={verification_token}" 
                                style="background-color: #007bff; color: white; padding: 12px 30px; 
                                       text-decoration: none; border-radius: 5px; display: inline-block;">
                                 Verify Email

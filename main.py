@@ -30,22 +30,10 @@ app.add_middleware(
 app.add_middleware(AuthMidd)
 app.include_router(router, prefix="/backend")
 
-@app.get("/hello")
-def hello(db = Depends(get_db)):
-
-    data = {
-        "name" : "vraj",
-        "std" : 12, 
-        "auth": "hello"
-    }
-
-    # token =  generate_token(data)
-    token =  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidnJhaiIsInN0ZCI6MTIsImF1dGgiOiJoZWxsbyIsImV4cCI6MTc3NjY3OTA0NH0.aeaRIkQ6IfTNq1oFPjBL0ZL4XCccWOVuJhE4FC2YC-s"
-
-    payload = validate_token(token)
+@app.get("/health")
+def hello():
 
     return {
-        "msg": token,
-        "payload" : payload
+        "msg": "Yeah, I am Helthy!"
     }
 

@@ -3,7 +3,6 @@
 from typing import TypedDict
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import PydanticOutputParser
-from langchain_huggingface import ChatHuggingFace
 from pydantic import BaseModel, Field
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv
